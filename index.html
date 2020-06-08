@@ -1,0 +1,41 @@
+<!doctype html>
+<html class="no-js" lang="EN">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>iframe embed for github 3d files</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+      
+       <div class="container">
+    		<div class="row">
+    			<div class="col-md-12">
+    				 <h1>Embed Interactive 3D Objects in Canvas</h1>
+    			</div>
+    			<div class="col-md-12 directions">
+    				<p>If you put (or find) 3D files smaller than 10MBs on GitHub you can embed them in any websites that allows iframes. </p>
+    				<p>You can get the file URL from GitHub. It will look something like this<br> <em>https://github.com/woodwardtw/passenger_pigeon/blob/master/1364_pp_skull2_edited_small.stl</em> </p>
+    			</div>
+    			<div class="col-md-12">
+    				<h2>Paste the GitHub file URL below.</h2>
+
+					<input id="git-src" value='https://github.com/woodwardtw/passenger_pigeon/blob/master/1364_pp_skull2_edited_small.stl'></input>
+					<button class="btn btn-primary" id="copy">Copy the Embed Code</button> 
+    			</div>    			
+    		</div>
+    		<div class="demo col-md-12">
+    			<div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">
+    				<iframe frameborder="0" width="100%" height="100%" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;" src="https://render.githubusercontent.com/view/3d?url=https://raw.githubusercontent.com/woodwardtw/passenger_pigeon/master/1364_pp_skull2_edited_small.stl"></iframe>
+    			</div>
+    		</div>
+    		<input id="embed-code"></input>
+    	</div>
+       
+        <script src="js/main.js"></script>
+
+    </body>
+</html>
